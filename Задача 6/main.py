@@ -29,6 +29,7 @@ def method_kyte_4(n,f,x0,y0,a,b):
     h=(b-a)/(n-1)
     t=np.linspace(a, b, n)
     x=np.empty(n)
+    x[0] = y0 
     for i in range(n-1):
         k1=f(x[i])
         k2=f(x[i]+h/2*k1)
