@@ -61,7 +61,6 @@ plt.title('Решение дифурча', fontsize=14)
 plt.grid(True, alpha=0.3)
 plt.legend(fontsize=12)
 plt.tight_layout()
-plt.savefig('Явная схема посмотреть сразу', dpi=300, bbox_inches='tight')
 plt.show() 
 
 
