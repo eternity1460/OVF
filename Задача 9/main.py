@@ -57,7 +57,6 @@ def creat_matrix(n,t,a,b):
         plt.plot(x, y, 'g-', linewidth=1, label=f'Чсиленное Решение y"=cos(x), c ГУ Неймана:\n dy/dx(-pi/2)={a}\n dy/dx(pi/2)={b}\n')
         return y
 
-
 #a1*y(-pi/2)+b1*y'(-pi/2)=c1
 #a2*y(pi/2)+b2*y'(pi/2)=c2
 def smesh_GY(n,a1,b1,c1,a2,b2,c2):
