@@ -47,8 +47,10 @@ def graf_2d(u,T,N,n,MAIN):
     t=np.linspace(0,T*(n-1),n)
     x=np.linspace(0,1,N)
     MOMENT=T*MAIN
+    y=[m.exp(-m.pi*m.pi*MOMENT)*m.sin(m.pi*xi) for xi in x]
     plt.figure(figsize=(10, 6))
     plt.plot(x, u[MAIN, :] , 'b-', linewidth=2.5, label=f'U(x, t={MOMENT:.2f})\n Число шагов N по координате = {N}\n Шаг по координате h = {h:.2f} \nЧисле шогов n по времени = {n}\n Шаг по времнеи τ ={T}')
+    plt.plot(x, y , 'g--', linewidth=2.5,alpha=0.6, label=f'Аналитическое решение U(x) для точки t={MOMENT:.2f}')
     plt.xlabel('x', fontsize=12)
     plt.ylabel('u', fontsize=12)
     plt.title('Решение уравнения теплопроводности', fontsize=14)
@@ -92,7 +94,7 @@ def START_3d(T,N,n):
 
 
 
-        
+       
 START_2d(0.01,200,100,20)
 START_3d(0.01,200,30)    
 
