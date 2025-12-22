@@ -66,4 +66,4 @@ def reshenie(L,U,N,e):
 
 
 
-print(reshenie(10,potencial,1000,0.0001))
+print(reshenie(10,potencial,1000,0.00001))
